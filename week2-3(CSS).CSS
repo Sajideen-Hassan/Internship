@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #4a90e2;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Typography Styles */
+.text-styles p {
+    margin: 10px 0;
+}
+
+.text-styles .highlight {
+    font-weight: bold;
+    color: #d9534f;
+    background-color: #f9eaea;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Color Palette */
+.color-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.green {
+    background-color: #27ae60;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.purple {
+    background-color: #9b59b6;
+}
+
+/* Background Patterns */
+#special-pattern {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    background: repeating-linear-gradient(
+        45deg,
+        #8e44ad,
+        #8e44ad 10px,
+        #3498db 10px,
+        #3498db 20px
+    );
+    color: white;
+}
+
+.bg-dots {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    background: radial-gradient(#e74c3c 20%, transparent 20%), radial-gradient(#f39c12 20%, transparent 20%);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+    color: white;
+}

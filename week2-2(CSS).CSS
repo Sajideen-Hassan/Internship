@@ -1,0 +1,64 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+.text-styles p {
+    margin: 10px 0;
+}
+.colors div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.background-patterns div {
+    height: 100px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+}
+.striped {
+    background: repeating-linear-gradient(
+        45deg,
+        #6a11cb,
+        #6a11cb 10px,
+        #2575fc 10px,
+        #2575fc 20px
+    );
+}
+.dots {
+    background: radial-gradient(#fc5c7d 20%, transparent 20%), radial-gradient(#6a82fb 20%, transparent 20%);
+    background-size: 10px 10px;
+    background-position: 0 0, 5px 5px;
+}
