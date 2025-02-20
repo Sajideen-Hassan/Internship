@@ -1,0 +1,110 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar Styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00457C;
+      padding: 0.5rem 1rem;
+      color: white;
+    }
+
+    .navbar .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar ul {
+        flex-direction: column;
+        display: none;
+        background-color: #00457C;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+      }
+
+      .navbar ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: block;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+
+    /* Page Content */
+    .content {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .content h1 {
+      margin-bottom: 1rem;
+      color: #00457C;
+    }
+
+    .schedule {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+    }
+
+    .schedule h2 {
+      color: #00457C;
+      margin-bottom: 1rem;
+    }
+
+    .schedule ul {
+      list-style: none;
+    }
+
+    .schedule ul li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
