@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Product Demo</title>
+    <link rel="stylesheet" href="week5-1(CSS).css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <img src="C:\Users\abide\Downloads\33828ea0c8a49d66af723784c830b833.jpg_720x720q80.jpg" class="slides">
+        <img src="C:\Users\abide\Downloads\87.14-03-2022-03-50-06-H168fb06a062243e0b14009525b5e910fK.jpg" class="slides">
+        <h2 class="product-name">M19 Airpods TWS (True Wireless Stereo)</h2>
+        <p class="product-description">Bluetooth Earphones Headset With HiFi Stereo Sound & Touch Control System (Connected With All Bluetooth Devices).</p>
+    </div>
+    <div class="card">
+        <a href="https://www.daraz.pk/products/m19-airpods-tws-true-wireless-stereo-bluetooth-earphones-headset-with-hifi-stereo-sound-touch-control-system-connected-with-all-bluetooth-devices-i189874472-s2371734260.html?scm=1007.51610.379274.0&pvid=1552fbc7-0eed-44db-80b5-5c147d7e98e0&search=flashsale&spm=a2a0e.tm80335142.FlashSale.d_189874472" class="button">For More Detail</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slides");
+
+        function showSlides() {
+            slides.forEach(slide => slide.style.display = "none");
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>
