@@ -1,0 +1,125 @@
+/* Reset default margin, padding and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General body and font styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #acacac;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #047c62;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header .logo img {
+    max-width: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347; /* Tomato color */
+  }
+  
+  /* Main section styles */
+  main {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  /* Product Listing Section */
+  .product-listing {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product:hover {
+    transform: scale(1.05);
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .product h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ff6347;
+  }
+  
+  .product button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .product button:hover {
+    background-color: #ff6347;
+  }
+  
+  /* Footer styles */
+  footer{
+    background-color: #000000;
+    color: white;
+    text-align: right;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
